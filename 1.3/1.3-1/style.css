@@ -1,0 +1,14 @@
+div {
+  background-color: gray;
+  display: inline-block;
+  width: 100divx;
+  height: 100divx;
+}
+.pikachu {
+  width: 100px;
+  height: 100px;
+}
+.squirtle {
+  width: 200px;
+  height: 200px;
+}
