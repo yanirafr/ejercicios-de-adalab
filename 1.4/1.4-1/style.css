@@ -1,10 +1,18 @@
+:root {
+    --cont-back-c:rgb(218, 150, 95);
+    --border-c: rgb(0, 0, 0);
+    --it-back-c: rgb(170, 52, 52);
+    --font-c: white;
+}
+
 .container {
-  background: yellow;
+  background: var(--cont-back-c);
+  display: flex;
 
 }
 .item {
-  background: green;
-  border: 5px solid orange;
+  background: var(--it-back-c);
+  border: 5px solid var(--border-c);
   font-size: 40px;
   color: white;
   box sizing: border-box;
@@ -14,14 +22,11 @@
 .cont1 {
     width: 500px;
     height: 500px;
-    display: flex;
     flex-direction: column;
 }
 /* Ej 1.4-2 */
 .cont2 {
-    display: flex;
     flex-wrap: wrap;
-
 }
 .it2 {
     width: 200px;
