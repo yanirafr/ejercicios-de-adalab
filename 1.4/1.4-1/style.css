@@ -1,0 +1,29 @@
+.container {
+  background: yellow;
+
+}
+.item {
+  background: green;
+  border: 5px solid orange;
+  font-size: 40px;
+  color: white;
+  box sizing: border-box;
+  text-align: center;
+}
+/* Ej 1.4-1 */
+.cont1 {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+/* Ej 1.4-2 */
+.cont2 {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.it2 {
+    width: 200px;
+    height: 100px;
+}
