@@ -1,0 +1,15 @@
+* {
+  border: 2px solid red;
+}
+.menu {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  align-items: center;
+}
+.item {
+  list-style-type: none;
+}

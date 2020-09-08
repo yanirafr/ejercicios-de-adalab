@@ -1,0 +1,10 @@
+* {
+  border: 2px solid red;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  width: 200px;
+}

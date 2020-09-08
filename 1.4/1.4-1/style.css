@@ -1,8 +1,8 @@
 :root {
-    --cont-back-c:rgb(218, 150, 95);
-    --border-c: rgb(0, 0, 0);
-    --it-back-c: rgb(170, 52, 52);
-    --font-c: white;
+  --cont-back-c: rgb(218, 150, 95);
+  --border-c: rgb(0, 0, 0);
+  --it-back-c: rgb(170, 52, 52);
+  --font-c: white;
 }
 
 .container {
@@ -14,21 +14,23 @@
   border: 5px solid var(--border-c);
   font-size: 40px;
   color: white;
-  box sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
 /* Ej 1.4-1 */
 .cont1 {
-    width: 500px;
-    height: 500px;
-    flex-direction: column;
+  width: 500px;
+  height: 500px;
+  flex-direction: column;
 }
 /* Ej 1.4-2 */
 .cont2 {
-    flex-direction: row;
-    flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px;
 }
 .it2 {
-    width: 200px;
-    height: 100px;
+  width: 200px;
+  height: 100px;
+  list-style-type: none;
 }
