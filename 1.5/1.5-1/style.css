@@ -1,0 +1,7 @@
+*{
+    border: 0;
+}
+.item {
+    display: inline;
+    padding:12px;
+}

@@ -1,0 +1,12 @@
+header{
+    display: border-box;
+    background: purple;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+main{
+    position: relative;
+    top: 80px;
+}
