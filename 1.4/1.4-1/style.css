@@ -8,7 +8,6 @@
 .container {
   background: var(--cont-back-c);
   display: flex;
-
 }
 .item {
   background: var(--it-back-c);
@@ -26,6 +25,7 @@
 }
 /* Ej 1.4-2 */
 .cont2 {
+    flex-direction: row;
     flex-wrap: wrap;
 }
 .it2 {
