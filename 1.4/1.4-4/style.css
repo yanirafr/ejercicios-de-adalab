@@ -12,6 +12,7 @@
   border: 5px solid grey;
   box-sizing: border-box;
   width: 50%;
+  order: 2;
 }
 .image {
   width: 70%;
