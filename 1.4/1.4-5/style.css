@@ -1,9 +1,18 @@
-* {
-  border: 2px solid blue;
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
 }
 header {
+  background: green;
+  flex-grow: 1;
 }
 main {
+  background: yellow;
+  flex-grow: 9;
 }
 footer {
+  background: tomato;
+  min-height: 10vh;
 }
