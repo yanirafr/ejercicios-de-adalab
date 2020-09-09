@@ -1,12 +1,15 @@
-header{
-    display: border-box;
-    background: purple;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+header {
+  display: border-box;
+  background: purple;
+  color: white;
+  padding-left: 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
-main{
-    position: relative;
-    top: 80px;
+main {
+  position: relative;
+  top: 80px;
 }
