@@ -1,7 +1,7 @@
-*{
-    border: 0;
+* {
+  border: 0;
 }
 .item {
-    display: inline;
-    padding:12px;
+  display: inline;
+  padding: 6px;
 }
