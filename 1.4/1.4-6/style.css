@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+  margin: auto;
+}
+.header {
+  background-color: orangered;
+  width: 100%;
+}
+.center {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.main {
+  background-color: lightskyblue;
+  width: 50%;
+  padding: 20px 0 20px 0;
+}
+.aside-1 {
+  background-color: orange;
+  order: -1;
+  width: 25%;
+}
+.aside-2 {
+  background-color: palevioletred;
+  width: 25%;
+}
+.footer {
+  background-color: palegreen;
+  width: 100%;
+}
