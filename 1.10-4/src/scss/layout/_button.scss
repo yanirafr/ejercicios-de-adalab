@@ -1,0 +1,27 @@
+.warning {
+    color: black;
+    background-color: yellow;
+    font-size: 5px;
+    height: 75px;
+    text-transform: initial;;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 768px){
+        height: 100px;
+    }
+    @media (min-width: 1280px){
+        height: 110px;
+    }
+    .button{
+        background-color: red;
+        color: white;
+        margin: 5px;
+        height: 45px;
+        border-radius: 5px;
+        text-transform: inherit;
+        width: 50vw;
+        font-size: 35px;
+    }
+}
