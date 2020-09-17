@@ -1,24 +1,24 @@
-.item{
-    width: 300px;
-    height: 300px;
-    margin: 40px;
-    padding: 30px;
+.item {
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  padding: 30px;
 }
-.div1{
-    background: green;
-    position: relative;
-    left: 100px;
-    top: 50px;
+.div1 {
+  background: green;
+  position: relative;
+  left: 100px;
+  top: 50px;
 }
-.div2{
-    background: greenyellow;
-    position: relative;
-    right: 150px;
-    bottom: 320px;
+.div2 {
+  background: greenyellow;
+  position: relative;
+  right: 150px;
+  bottom: 320px;
 }
-.div3{
-    background: yellow;
-    position: relative;
-    left: 180px;
-    bottom: 240px;
+.div3 {
+  background: yellow;
+  position: relative;
+  left: 180px;
+  bottom: 240px;
 }
