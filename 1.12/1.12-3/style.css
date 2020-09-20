@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% 1fr 20%;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.header{
+    grid-column: span 12 ;
+    background-color: pink;
+}
+.menu{
+    grid-column: span 4;
+    background-color: rebeccapurple;
+}
+.content{
+    grid-column:  span 8;
+    background-color: brown;
+}
+.footer{
+    grid-column: span 12;
+    background-color: lightblue;
+}
