@@ -11,9 +11,8 @@
   position: relative;
 }
 .container:hover {
+  border-color: transparent;
   transition: ease 2s;
-  transform: translateY(-100vh);
-  border-color: rgb(199, 199, 199, 0);
 }
 .box {
   color: rgb(30, 170, 140);
@@ -22,4 +21,8 @@
   border-radius: 10px;
   box-shadow: 0 0px 20px rgba(94, 94, 94, 0.4);
   transform: translateY(100vh);
+}
+.container:hover .box {
+  transition: ease 2s;
+  transform: translateY(0);
 }
