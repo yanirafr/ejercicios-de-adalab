@@ -20,9 +20,9 @@
   padding: 25px 50px;
   border-radius: 10px;
   box-shadow: 0 0px 20px rgba(94, 94, 94, 0.4);
-  transform: translateY(100vh);
+  transform: translateY(50vh);
 }
 .container:hover .box {
-  transition: ease 2s;
+  transition: 1.5s cubic-bezier(0.34, 0.35, 0.54, 1.56);
   transform: translateY(0);
 }
