@@ -4,10 +4,16 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .container {
   border: dashed rgb(199, 199, 199) 1px;
   position: relative;
+}
+.container:hover {
+  transition: ease 2s;
+  transform: translateY(-100vh);
+  border-color: rgb(199, 199, 199, 0);
 }
 .box {
   color: rgb(30, 170, 140);
@@ -15,9 +21,5 @@
   padding: 25px 50px;
   border-radius: 10px;
   box-shadow: 0 0px 20px rgba(94, 94, 94, 0.4);
-  transform: translateY(100px);
-}
-.box:hover {
-  transition: ease 2s;
-  transform: translateY(0);
+  transform: translateY(100vh);
 }
