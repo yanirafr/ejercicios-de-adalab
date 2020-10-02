@@ -6,4 +6,5 @@ const daysPerYear = 365;
 const hoursPerDay = 24;
 const totalHours = years * daysPerYear * hoursPerDay;
 
-console.log(totalHours);
+const hoursLived = document.querySelector(".hours-lived");
+hoursLived.innerHTML = totalHours;
