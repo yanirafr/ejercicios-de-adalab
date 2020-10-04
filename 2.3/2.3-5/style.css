@@ -1,0 +1,18 @@
+.title {
+  text-transform: uppercase;
+}
+.succes {
+  color: rgb(11, 66, 11);
+  background-color: rgb(209, 255, 209);
+  border: solid green;
+}
+.error {
+  color: rgb(102, 22, 22);
+  background-color: rgb(255, 209, 209);
+  border: solid red;
+}
+.warning {
+  color: rgb(94, 94, 22);
+  background-color: rgb(252, 255, 203);
+  border: solid yellow;
+}
