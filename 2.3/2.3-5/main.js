@@ -1,3 +1,5 @@
+"use strict";
+
 const notification = document.querySelector(".notification");
 const title = document.querySelector(".title");
 const text = document.querySelector(".text");

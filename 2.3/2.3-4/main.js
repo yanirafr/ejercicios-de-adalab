@@ -1,3 +1,5 @@
+"use strict";
+
 let dog = document.querySelector(".dog-age");
 let dogAge = parseFloat(dog.innerHTML);
 humanAge = document.querySelector(".human-age");
