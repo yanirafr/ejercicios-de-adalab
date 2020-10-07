@@ -6,4 +6,4 @@ function writeOnP(event) {
   write.innerHTML = letter;
 }
 
-input.addEventListener("keydown", writeOnP);
+input.addEventListener("keyup", writeOnP);
