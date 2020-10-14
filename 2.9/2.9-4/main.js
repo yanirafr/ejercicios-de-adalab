@@ -19,18 +19,62 @@ const list = document.querySelector(".js-task");
 
 let listItem = "";
 for (let i = 0; i < tasks.length; i++) {
-  let listItem = `<div><li>${tasks[i].name}</li><input type="checkbox" class = "check${i}"></div>`;
-  console.log(listItem);
+  let listItem = `<div><li class="list-item${i}">${tasks[i].name}</li><input type="checkbox" class = "check${i}"></div>`;
+  //console.log(listItem);
   list.innerHTML += listItem;
 }
 
 // Check box
+
 for (let i = 0; i < tasks.length; i++) {
   if (tasks[i].completed === true) {
-    console.log(tasks[i]);
-    console.log(document.querySelector(`.check${i}`));
+    //Check
+    // console.log(tasks[i]);
+    // console.log(document.querySelector(`.check${i}`));
     document.querySelector(`.check${i}`).checked = true;
+
+    //Add CSS class
+    // console.log(document.querySelector(`.list-item${i}`));
+    document.querySelector(`.list-item${i}`).classList.add("complete");
   }
 }
 
-console.log(listItem);
+// Click function
+
+function userCheck() {
+  for (let i = 0; i < tasks.length; i++) {
+    if (document.querySelector(`.check${i}`).checked === true) {
+      tasks[i].completed === true;
+      document.querySelector(`.list-item${i}`).classList.add("complete");
+    } else if (document.querySelector(`.check${i}`).checked === false) {
+      tasks[i].completed === false;
+      document.querySelector(`.list-item${i}`).classList.remove("complete");
+    }
+  }
+}
+
+for (let i = 0; i < tasks.length; i++) {
+  document.querySelector(`.check${i}`).addEventListener("click", userCheck);
+  // console.log(document.querySelector(`.check${i}`));
+}
+
+// Total tasks
+
+// Query selector
+const count = document.querySelector(".js-count");
+
+// Completed tasks
+
+let done = 0;
+let notDone = 0;
+
+for (let i = 0; i < tasks.length; i++) {
+  if (tasks[i].completed === true) {
+    done++;
+  } else if (tasks[i].completed === false) {
+    notDone++;
+  }
+}
+
+// Write on page
+count.innerHTML = `Tienes ${tasks.length} tareas, ${done} completadas y ${notDone} por hacer`;
