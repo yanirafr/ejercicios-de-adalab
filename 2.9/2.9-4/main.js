@@ -14,6 +14,7 @@ const tasks = [
 
 // Query selector
 const list = document.querySelector(".js-task");
+const count = document.querySelector(".js-count");
 
 // Add list items
 
@@ -44,13 +45,31 @@ for (let i = 0; i < tasks.length; i++) {
 function userCheck() {
   for (let i = 0; i < tasks.length; i++) {
     if (document.querySelector(`.check${i}`).checked === true) {
-      tasks[i].completed === true;
+      tasks[i].completed = true;
       document.querySelector(`.list-item${i}`).classList.add("complete");
     } else if (document.querySelector(`.check${i}`).checked === false) {
-      tasks[i].completed === false;
+      tasks[i].completed = false;
       document.querySelector(`.list-item${i}`).classList.remove("complete");
     }
   }
+  //   console.log(tasks);
+
+  // TOTAL TASKS
+
+  // Variables
+  let done = 0;
+  let notDone = 0;
+
+  // Completed tasks
+  for (let i = 0; i < tasks.length; i++) {
+    if (tasks[i].completed === true) {
+      done++;
+    } else if (tasks[i].completed === false) {
+      notDone++;
+    }
+  }
+  // Write on page
+  count.innerHTML = `Tienes ${tasks.length} tareas, ${done} completadas y ${notDone} por hacer`;
 }
 
 for (let i = 0; i < tasks.length; i++) {
@@ -58,16 +77,13 @@ for (let i = 0; i < tasks.length; i++) {
   // console.log(document.querySelector(`.check${i}`));
 }
 
-// Total tasks
+// TOTAL TASKS
 
-// Query selector
-const count = document.querySelector(".js-count");
-
-// Completed tasks
-
+// Variables
 let done = 0;
 let notDone = 0;
 
+// Completed tasks
 for (let i = 0; i < tasks.length; i++) {
   if (tasks[i].completed === true) {
     done++;
