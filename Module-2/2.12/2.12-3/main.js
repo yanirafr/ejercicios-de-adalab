@@ -8,8 +8,8 @@ const users = [
 
 const saluteUsers = users.map(users => 
     {
-        if (users.isPremium === false) {return "Hola " + users.name + "."};
-        if (users.isPremium === true) {return "Hola " + users.name + "." + " Gracias por confiar en nosotros."}
+        if (users.isPremium === false) {return `Hola ${users.name}.`};
+        if (users.isPremium === true) {return `Hola ${users.name}. Gracias por confiar en nosotros.`}
     });
 
 console.log(saluteUsers);
