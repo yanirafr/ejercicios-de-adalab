@@ -5,16 +5,16 @@ import "./App.css";
 class App extends Component {
   render() {
     const appHeader = (
-      <header className="App-header">
-        <img src={catrina} className="App-img" alt="logo" title="Photo" />
+      <header className="header">
+        <img src={catrina} className="header__img" alt="logo" title="Photo" />
         <div className="header__box">
-          <h1 className="App-name">Yanira Fernández</h1>
-          <h2 className="App-date">Lunes 02 de noviembre de 2020</h2>
+          <h1 className="header__name">Yanira Fernández</h1>
+          <h2 className="header__date">Lunes 02 de noviembre de 2020</h2>
         </div>
       </header>
     );
     const appMain = (
-      <main className="App-main">
+      <main className="main">
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod eos,
           laudantium, repudiandae aspernatur esse natus saepe at beatae ipsa
@@ -29,9 +29,9 @@ class App extends Component {
       </main>
     );
     const appFooter = (
-      <footer className="App-footer">
-        <small className="App-small">Leer más...</small>
-        <div className="App-likes">
+      <footer className="footer">
+        <small className="footer__small">Leer más...</small>
+        <div className="footer__likes">
           <p>37</p>
           <i class="fas fa-heart"></i>
         </div>
