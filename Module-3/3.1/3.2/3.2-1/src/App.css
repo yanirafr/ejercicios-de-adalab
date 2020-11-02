@@ -1,7 +1,8 @@
-.App {
+.box {
   width: 450px;
   background-color: white;
   margin: 20px;
+  box-shadow: 0 5px 10px 5px gray;
   text-align: start;
   color: rgb(82, 82, 82);
 }

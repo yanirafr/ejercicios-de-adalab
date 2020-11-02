@@ -38,7 +38,7 @@ class App extends Component {
       </footer>
     );
     const appBox = (
-      <div className="App">
+      <div className="box">
         {appHeader}
         {appMain}
         {appFooter}
