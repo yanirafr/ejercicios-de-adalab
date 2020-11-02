@@ -12,12 +12,11 @@
   align-items: center;
   font-family: sans-serif;
   font-size: 12px;
-}
-
-.header__img {
-  height: 80px;
-  border-radius: 50%;
-  margin: 20px;
+  &__img {
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px;
+  }
 }
 
 .main {
@@ -31,13 +30,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.footer__small {
-  color: rgb(179, 179, 179);
-}
-
-.footer__likes {
-  display: flex;
-  align-items: center;
+  &__small {
+    color: rgb(179, 179, 179);
+  }
+  &__likes {
+    display: flex;
+    align-items: center;
+  }
 }
