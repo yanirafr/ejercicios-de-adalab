@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import catrina from "./catrina.png";
 import "./App.scss";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     const appHeader = (
       <header className="header">
@@ -33,7 +33,7 @@ class App extends Component {
         <small className="footer__small">Leer más...</small>
         <div className="footer__likes">
           <p>37</p>
-          <i class="fas fa-heart"></i>
+          <i class="footer__icon fas fa-heart"></i>
         </div>
       </footer>
     );

@@ -37,4 +37,10 @@
     display: flex;
     align-items: center;
   }
+  &__icon {
+    color: red;
+    opacity: 0.7;
+    font-size: 24px;
+    margin-left: 10px;
+  }
 }
