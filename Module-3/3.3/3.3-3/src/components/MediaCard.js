@@ -26,7 +26,7 @@ const MediaCard = (props) => {
         <small className="footer__small">Leer más...</small>
         <div className="footer__likes">
           <p>{props.likes}</p>
-          <i class="footer__icon fas fa-heart"></i>
+          {props.heart}
         </div>
       </footer>
     </div>

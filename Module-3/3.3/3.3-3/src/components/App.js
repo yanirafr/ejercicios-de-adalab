@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MediaCard from "./MediaCard";
+import MediaData from "./MediaData";
 
 class App extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <MediaCard />
+        <MediaData />
       </>
     );
   }
