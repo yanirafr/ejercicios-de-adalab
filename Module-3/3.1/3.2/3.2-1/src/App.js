@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import catrina from "./catrina.png";
 import "./App.scss";
 
-class App extends React.Component {
+class App extends Component {
   render() {
     const appHeader = (
       <header className="header">
