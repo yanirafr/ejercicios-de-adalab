@@ -1,6 +1,5 @@
-import React, { Component } from "react";
-import logo from "../catrina.png";
-import "../App.scss";
+import React from "react";
+import "../stylesheet/App.scss";
 
 const MediaCard = (props) => {
   return (
