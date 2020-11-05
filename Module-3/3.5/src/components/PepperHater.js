@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 const HateHandler = (ev) => {
-  if (ev.target.value.includes("pepper")) {
+  if (ev.target.value.toLowerCase().includes("pimiento")) {
     return alert("ODIO EL PIMIENTO!!!");
   }
 };
