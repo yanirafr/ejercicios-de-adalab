@@ -12,7 +12,6 @@ class PepperHater extends Component {
   HateHandler = (ev) => {
     if (ev.target.value.toLowerCase().includes("pimiento")) {
       this.class = "red";
-      alert("ODIO EL PIMIENTO!!!");
     } else {
       this.class = "";
     }
