@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
 
 const HateHandler = (ev) => {
@@ -14,6 +15,7 @@ class PepperHater extends Component {
   render() {
     return (
       <textarea
+        backgroundcolor="red"
         onChange={HateHandler}
         name="hate"
         id="hate"
