@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <div>
-      <p className="years">Tengo {year} años}</p>
+      <p className="years">Tengo {year} años</p>
       <p className="gifts">Tengo {gift} regalos</p>
       <button onClick={getOlder}>Hazme más vieja</button>
       <button onClick={getPresents}>Dame más regalos</button>
