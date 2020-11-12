@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 const App = () => {
-  const [year, getYear] = useState(32);
-  const [gift, getGift] = useState(1);
+  const [year, setYear] = useState(32);
+  const [gift, setGift] = useState(1);
 
   const getOlder = () => {
-    getYear(year + 1);
+    setYear(year + 1);
   };
   const getPresents = () => {
-    getGift(gift + 1);
+    setGift(gift + 1);
   };
 
   return (
