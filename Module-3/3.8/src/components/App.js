@@ -4,26 +4,37 @@ import Card2 from "./Card2";
 import Form2 from "./Form2";
 
 const App = () => {
-  const [name, setName] = useState("Película");
-  const [description, setDescription] = useState("Descripción");
-  const [language, setLanguage] = useState("Español");
-  const [age, setAge] = useState("Todos los públicos");
+  const [name, setName] = useState(localStorage.getItem("name") || "Película");
+  const [description, setDescription] = useState(
+    localStorage.getItem("description") || "Descripción"
+  );
+  const [language, setLanguage] = useState(
+    localStorage.getItem("language") || "Español"
+  );
+  const [age, setAge] = useState(
+    localStorage.getItem("age") || "Todos los públicos"
+  );
   const [poster, setPoster] = useState(
-    "https://via.placeholder.com/150x150/808080/fffffff/?text=Poster"
+    localStorage.getItem("poster") ||
+      "https://via.placeholder.com/150x150/808080/fffffff/?text=Poster"
   );
 
   const handleForm = (inputId, inputValue) => {
     if (inputId === "name") {
       setName(inputValue);
+      localStorage.setItem("name", inputValue);
     } else if (inputId === "description") {
       setDescription(inputValue);
+      localStorage.setItem("description", inputValue);
     } else if (inputId === "language") {
       setLanguage(inputValue);
+      localStorage.setItem("language", inputValue);
     }
   };
 
   const handleAge = (inputValue) => {
     setAge(inputValue);
+    localStorage.setItem("age", inputValue);
   };
 
   const handlePoster = (poster) => {
@@ -34,6 +45,7 @@ const App = () => {
       const posterUrl = reader.result;
       // console.log(posterUrl);
       setPoster(posterUrl);
+      localStorage.setItem("poster", posterUrl);
     };
 
     reader.readAsDataURL(poster);
