@@ -25,7 +25,13 @@ const Form = (props) => {
     <form className="form" onChange={handleForm}>
       {/* Text & select Input */}
       <label htmlFor="name">Nombre de la película</label>
-      <input type="text" name="name" id="name" placeholder="Película" />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Película"
+        value={localStorage.getItem("name") || ""}
+      />
       <label htmlFor="description">Descripción</label>
       <textarea
         name="description"
@@ -33,12 +39,28 @@ const Form = (props) => {
         placeholder="Descripción"
         cols="30"
         rows="10"
+        value={localStorage.getItem("description") || ""}
       ></textarea>
       <label htmlFor="language">Idioma</label>
       <select name="language" id="language">
-        <option value="Español">Español</option>
-        <option value="Portugués">Portugués</option>
-        <option value="Inglés">Inglés</option>
+        <option
+          value="Español"
+          selected={props.language === "Español" ? true : false}
+        >
+          Español
+        </option>
+        <option
+          value="Portugués"
+          selected={props.language === "Portugués" ? true : false}
+        >
+          Portugués
+        </option>
+        <option
+          value="Inglés"
+          selected={props.language === "Inglés" ? true : false}
+        >
+          Inglés
+        </option>
       </select>
 
       {/* Radio Input */}
@@ -49,6 +71,7 @@ const Form = (props) => {
         id="all-age"
         onClick={selectAge}
         value="Todos los públicos"
+        checked={props.age === "Todos los públicos" ? true : false}
       />
       <label htmlFor="age-15">Mayores de 15</label>
       <input
@@ -57,6 +80,7 @@ const Form = (props) => {
         id="age-15"
         onClick={selectAge}
         value="Mayores de 15"
+        checked={props.age === "Mayores de 15" ? true : false}
       />
       <label htmlFor="age-18">Mayores de 18</label>
       <input
@@ -65,6 +89,7 @@ const Form = (props) => {
         id="age-18"
         onClick={selectAge}
         value="Mayores de 18"
+        checked={props.age === "Mayores de 18" ? true : false}
       />
 
       {/* Image Input */}

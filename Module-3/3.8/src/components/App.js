@@ -31,10 +31,10 @@ const App = () => {
   // Text & select Input
   const handleForm = (inputId, inputValue) => {
     if (inputId === "name") {
-      setName(inputValue);
+      setName(inputValue || "Película");
       localStorage.setItem("name", inputValue);
     } else if (inputId === "description") {
-      setDescription(inputValue);
+      setDescription(inputValue || "Descripción");
       localStorage.setItem("description", inputValue);
     } else if (inputId === "language") {
       setLanguage(inputValue);
@@ -67,6 +67,8 @@ const App = () => {
         sendForm={handleForm}
         sendAge={handleAge}
         sendPoster={handlePoster}
+        age={age}
+        language={language}
       />
       <Card2
         name={name}

@@ -7,6 +7,8 @@ const Form2 = (props) => {
         sendForm={props.sendForm}
         sendAge={props.sendAge}
         sendPoster={props.sendPoster}
+        age={props.age}
+        language={props.language}
       />
     </>
   );
