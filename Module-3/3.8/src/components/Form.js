@@ -44,6 +44,14 @@ const Form = (props) => {
         onClick={selectAge}
         value="Todos los públicos"
       />
+      <label htmlFor="age-15">Mayores de 15</label>
+      <input
+        type="radio"
+        name="age"
+        id="age-15"
+        onClick={selectAge}
+        value="Mayores de 15"
+      />
       <label htmlFor="age-18">Mayores de 18</label>
       <input
         type="radio"
