@@ -1,12 +1,13 @@
 import React, { Component, useState } from "react";
 import "../stylesheet/App.scss";
-import Card from "./Card";
-import Form from "./Form";
+import Card2 from "./Card2";
+import Form2 from "./Form2";
 
 const App = () => {
   const [name, setName] = useState("Película");
   const [description, setDescription] = useState("Descripción");
   const [language, setLanguage] = useState("Español");
+  const [age, setAge] = useState("Todos los públicos");
 
   const handleForm = (inputId, inputValue) => {
     if (inputId === "name") {
@@ -18,10 +19,19 @@ const App = () => {
     }
   };
 
+  const selectAge = (inputValue) => {
+    setAge(inputValue);
+  };
+
   return (
     <main>
-      <Form sendForm={handleForm} />
-      <Card name={name} description={description} language={language} />
+      <Form2 sendForm={handleForm} sendAge={selectAge} />
+      <Card2
+        name={name}
+        description={description}
+        language={language}
+        age={age}
+      />
     </main>
   );
 };

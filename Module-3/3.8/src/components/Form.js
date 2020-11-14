@@ -5,6 +5,11 @@ const Form = (props) => {
     props.sendForm(id, value);
   };
 
+  const selectAge = (ev) => {
+    const age = ev.target.value;
+    props.sendAge(age);
+  };
+
   return (
     <form className="form" onChange={handleForm}>
       <label htmlFor="name">Nombre de la película</label>
@@ -23,6 +28,22 @@ const Form = (props) => {
         <option value="Portugués">Portugués</option>
         <option value="Inglés">Inglés</option>
       </select>
+      <label htmlFor="all-age">Todos los públicos</label>
+      <input
+        type="radio"
+        name="age"
+        id="all-age"
+        onClick={selectAge}
+        value="Todos los públicos"
+      />
+      <label htmlFor="age-18">Mayores de 18</label>
+      <input
+        type="radio"
+        name="age"
+        id="age-18"
+        onClick={selectAge}
+        value="Mayores de 18"
+      />
     </form>
   );
 };
