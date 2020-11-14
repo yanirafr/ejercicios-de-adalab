@@ -8,6 +8,7 @@ const Card2 = (props) => {
         description={props.description}
         language={props.language}
         age={props.age}
+        poster={props.poster}
       />
     </>
   );

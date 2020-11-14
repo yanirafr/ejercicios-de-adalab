@@ -1,3 +1,5 @@
+import React from "react";
+
 const Form = (props) => {
   const handleForm = (ev) => {
     const id = ev.target.id;
@@ -8,6 +10,21 @@ const Form = (props) => {
   const selectAge = (ev) => {
     const age = ev.target.value;
     props.sendAge(age);
+  };
+
+  const posterInput = React.createRef();
+  const reader = new FileReader();
+
+  const selectPoster = () => {
+    const poster = posterInput.current.files[0];
+    getUrl();
+    reader.readAsDataURL(poster);
+  };
+
+  const getUrl = () => {
+    const posterUrl = reader.result;
+    console.log(posterUrl);
+    // props.sendPoster(posterUrl);
   };
 
   return (
@@ -44,6 +61,17 @@ const Form = (props) => {
         onClick={selectAge}
         value="Mayores de 18"
       />
+      <label htmlFor="poster">
+        Carátula
+        <input
+          type="file"
+          name="poster"
+          id="poster"
+          accept="image/*"
+          ref={posterInput}
+          onChange={selectPoster}
+        />
+      </label>
     </form>
   );
 };
