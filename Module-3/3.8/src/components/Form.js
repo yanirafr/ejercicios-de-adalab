@@ -1,17 +1,20 @@
 import React from "react";
 
 const Form = (props) => {
+  // Text & select Input
   const handleForm = (ev) => {
     const id = ev.target.id;
     const value = ev.target.value;
     props.sendForm(id, value);
   };
 
+  // Radio Input
   const selectAge = (ev) => {
     const age = ev.target.value;
     props.sendAge(age);
   };
 
+  // Image Input
   const posterInput = React.createRef();
   const selectPoster = () => {
     const poster = posterInput.current.files[0];
@@ -20,6 +23,7 @@ const Form = (props) => {
 
   return (
     <form className="form" onChange={handleForm}>
+      {/* Text & select Input */}
       <label htmlFor="name">Nombre de la película</label>
       <input type="text" name="name" id="name" placeholder="Película" />
       <label htmlFor="description">Descripción</label>
@@ -36,6 +40,8 @@ const Form = (props) => {
         <option value="Portugués">Portugués</option>
         <option value="Inglés">Inglés</option>
       </select>
+
+      {/* Radio Input */}
       <label htmlFor="all-age">Todos los públicos</label>
       <input
         type="radio"
@@ -60,6 +66,8 @@ const Form = (props) => {
         onClick={selectAge}
         value="Mayores de 18"
       />
+
+      {/* Image Input */}
       <label htmlFor="poster">
         Carátula
         <input
