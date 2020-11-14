@@ -13,18 +13,9 @@ const Form = (props) => {
   };
 
   const posterInput = React.createRef();
-  const reader = new FileReader();
-
   const selectPoster = () => {
     const poster = posterInput.current.files[0];
-    getUrl();
-    reader.readAsDataURL(poster);
-  };
-
-  const getUrl = () => {
-    const posterUrl = reader.result;
-    console.log(posterUrl);
-    // props.sendPoster(posterUrl);
+    props.sendPoster(poster);
   };
 
   return (

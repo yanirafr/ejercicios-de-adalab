@@ -26,13 +26,26 @@ const App = () => {
     setAge(inputValue);
   };
 
-  const handleposter = (poster) => {
-    console.log(poster);
+  const handlePoster = (poster) => {
+    const reader = new FileReader();
+    // console.log(poster);
+
+    reader.onload = () => {
+      const posterUrl = reader.result;
+      // console.log(posterUrl);
+      setPoster(posterUrl);
+    };
+
+    reader.readAsDataURL(poster);
   };
 
   return (
     <main>
-      <Form2 sendForm={handleForm} sendAge={handleAge} />
+      <Form2
+        sendForm={handleForm}
+        sendAge={handleAge}
+        sendPoster={handlePoster}
+      />
       <Card2
         name={name}
         description={description}
