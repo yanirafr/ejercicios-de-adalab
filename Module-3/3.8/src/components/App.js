@@ -54,6 +54,7 @@ const App = () => {
 
     reader.onload = () => {
       const posterUrl = reader.result;
+      console.log(posterUrl);
       setPoster(posterUrl);
       localStorage.setItem("poster", posterUrl);
     };

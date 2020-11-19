@@ -18,6 +18,7 @@ const Form = (props) => {
   const posterInput = React.createRef();
   const selectPoster = () => {
     const poster = posterInput.current.files[0];
+    console.log(poster);
     props.sendPoster(poster);
   };
 

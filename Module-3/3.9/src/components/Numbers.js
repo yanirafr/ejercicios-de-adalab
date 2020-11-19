@@ -1,7 +1,7 @@
 import { useLayoutEffect } from "react";
 
 const Numbers = (props) => {
-  const numbers = [1, 4, 6, 8, 45, 89];
+  const numbers = [1, 4, 6, 8, 45, 56, 61, 89, 104];
   const inputNumber = props.number;
   const inputCheck = props.even;
 
