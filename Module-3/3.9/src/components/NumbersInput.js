@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const NumbersInput = (props) => {
   const getInput = (ev) => {
     const value = ev.target.value;
@@ -27,6 +25,7 @@ const NumbersInput = (props) => {
         name="even"
         id="even"
         value="even"
+        checked={props.value === "even" ? true : false}
       />
     </div>
   );
