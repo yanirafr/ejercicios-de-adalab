@@ -1,0 +1,12 @@
+{
+  "name": "my-first-node-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "yanira",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
